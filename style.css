@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #8338ec;
+    padding: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #ffbe0b;
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+.logo p {
+    color: #3a86ff;
+    font-size: 1rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin: 0 1rem;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #ffbe0b;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    background-color: #fff;
+}
+
+.hero-content {
+    flex-basis: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #ffbe0b;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.hero-buttons {
+    margin-top: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #ff006e;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3a86ff;
+}
+
+/* Hero Image */
+.hero-image img {
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+.card {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h4 {
+    margin-bottom: 10px;
+}
+
+/* Offerings Section */
+#services {
+    background: #e8f5f9;
+    padding: 50px;
+    text-align: center;
+}
+
+.offerings {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.offering {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 50px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.testimonial {
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQs Section */
+#faqs {
+    padding: 50px;
+    text-align: center;
+}
+
+.faq-list {
+    list-style: none;
+}
+
+.faq-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Footer Section */
+footer {
+    background: #00474f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+#features {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features-container h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.features-container p {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+.features-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: #f9f9f9;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    margin: 15px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+.feature-card:hover {
+    border-color: #8338ec;
+    transform: scale(1.05);
+}
+
+.feature-card i {
+    font-size: 2rem;
+    color: #fb5607;
+}
+
+.feature-card h3 {
+    color: #333;
+    margin: 15px 0 10px;
+}
+
+.feature-card p {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.feature-card:hover .card-details {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-details {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Get Started Button */
+.get-started-btn {
+    background-color: #8338ec;
+    text-align: center;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #3a86ff;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    padding: 50px 0;
+    background-color: #f0f0f0;
+    text-align: center; /* Center text */
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #03045e;
+    margin-bottom: 20px;
+    position: relative;
+    animation: slideIn 1.2s ease-out;
+}
+
+.quote {
+    font-size: 1.2rem;
+    color: #3a86ff;
+    max-width: 800px;
+    margin: 20px auto; /* Center the quote with auto margins */
+    text-align: center; /* Center align the text */
+    animation: subtleMove 2s infinite alternate ease-in-out;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    width: 90%; /* Increased width for better centering */
+}
+
+.text-section {
+    width: 50%;
+    padding-right: 20px; /* Add some space on the right */
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8338ec;
+    margin-bottom: 15px;
+}
+
+.problem-section, .purpose-section {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #ffbe0b;
+    margin: 20px 0;
+}
+
+.image-section {
+    width: 40%; /* Ensure the image is smaller for better centering */
+    position: relative;
+    animation: slideInImage 1.5s ease-out;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@keyframes subtleMove {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInImage {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
